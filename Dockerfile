@@ -15,7 +15,7 @@ RUN useradd -m -s /bin/bash ghost && \
 USER ghost:ghost
 WORKDIR /usr/app/jpetstore 
 
-RUN pip install -r requirement.txt && echo "python main.py" > /usr/app/jpetstore/entrypoint.sh && \ 
+RUN pip install -r requirement.txt && echo "flask run" > /usr/app/jpetstore/entrypoint.sh && \ 
     chmod 700 /usr/app/jpetstore/entrypoint.sh 
 
 ENTRYPOINT ["bash","-c","./entrypoint.sh"] 
