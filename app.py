@@ -1,11 +1,11 @@
 from flask import Flask
+from flask import jsonify
+from flask import flash, request
 from flask_cors import CORS, cross_origin
+import json
 
 app = Flask(__name__)
 CORS(app)
-from flask import jsonify
-from flask import flash, request
-import json
 
 inventories = [{"itemId":"EST-1","qty":"10000"}, {"itemId":"EST-2","qty":"10000"}, {"itemId":"EST-3","qty":"10000"}, {"itemId":"EST-4","qty":"10000"}, {"itemId":"EST-5","qty":"10000"}, {"itemId":"EST-6","qty":"10000"}, {"itemId":"EST-7","qty":"10000"}, {"itemId":"EST-8","qty":"10000"}, {"itemId":"EST-9","qty":"10000"}, {"itemId":"EST-10","qty":"10000"}, {"itemId":"EST-11","qty":"10000"}, {"itemId":"EST-12","qty":"10000"}, {"itemId":"EST-13","qty":"10000"}, {"itemId":"EST-14","qty":"10000"}, {"itemId":"EST-15","qty":"10000"}, {"itemId":"EST-16","qty":"10000"}, {"itemId":"EST-17","qty":"10000"}, {"itemId":"EST-18","qty":"10000"}, {"itemId":"EST-19","qty":"10000"}, {"itemId":"EST-20","qty":"10000"}, {"itemId":"EST-21","qty":"10000"}, {"itemId":"EST-22","qty":"10000"}, {"itemId":"EST-23","qty":"10000"}, {"itemId":"EST-24","qty":"10000"}, {"itemId":"EST-25","qty":"10000"}, {"itemId":"EST-26","qty":"10000"}, {"itemId":"EST-27","qty":"10000"}, {"itemId":"EST-28","qty":"10000"}]
 
